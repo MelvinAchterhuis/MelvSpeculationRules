@@ -1,0 +1,27 @@
+{
+    "name": "melvinachterhuis/speculation-rules-plugin",
+    "description": "Speculation rules",
+    "version": "1.0.0",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Melvin Achterhuis"
+        }
+    ],
+    "require": {
+        "shopware/core": "6.5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Melv\\SpeculationRules\\": "src/"
+        }
+    },
+    "extra": {
+        "shopware-plugin-class": "Melv\\SpeculationRules\\MelvSpeculationRules",
+        "label": {
+            "de-DE": "Speculation rules",
+            "en-GB": "Speculation rules"
+        }
+    }
+}

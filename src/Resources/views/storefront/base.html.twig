@@ -1,0 +1,17 @@
+{% sw_extends '@Storefront/storefront/base.html.twig' %}
+
+{% block base_body_classes %}{{ parent() }}{% if config('MelvSpeculationRules.config.enableSpeculationRules') %} melv-speculation-rules{% endif %}{% endblock%}
+
+{% block base_body_script %}
+    {{ parent() }}
+    {% block base_speculation_rules %}
+        {% if config('MelvSpeculationRules.config.enableSpeculationRules') %}
+            {% set customLinks = config('MelvSpeculationRules.config.customSelectors') %}
+            {% set options = {
+                selectorNavigationLinks: '.nav-item.nav-link',
+                selectorCustomLinks: (customLinks|split('|'))
+            } %}
+            <template data-speculation-rules="true" data-speculation-rules-options="{{ options|json_encode }}"></template>
+        {% endif %}
+    {% endblock %}
+{% endblock %}
