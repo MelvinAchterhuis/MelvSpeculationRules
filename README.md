@@ -1,6 +1,10 @@
 ## A plugin for [Shopware 6](https://github.com/shopware/shopware)
 
-Backports the [experimental speculation rules](https://github.com/shopware/shopware/commit/3bd9f9039deb483353543ec74035055e578a3e6f) from Shopware 6.7/6.8 to Shopware 6.5
+Backports the [experimental speculation rules](https://github.com/shopware/shopware/commit/3bd9f9039deb483353543ec74035055e578a3e6f) from Shopware 6.6 Shopware 6.5
+
+Read more about speculation rules in the [Chrome DevTools documentation](https://developer.chrome.com/docs/web-platform/prerender-pages).
+
+
 
 ## Installation
 - Require the plugin with composer
@@ -16,7 +20,6 @@ Backports the [experimental speculation rules](https://github.com/shopware/shopw
 | Version 	 | Requirements  |
 |-----------|---------------|
 | 1.0.0     | Shopware 6.5	 |
-| 2.0.0     | Shopware 6.6	 |
 
 ## License
 

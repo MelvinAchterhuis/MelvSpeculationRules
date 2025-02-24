@@ -12,6 +12,12 @@
                 selectorCustomLinks: (customLinks|split('|'))
             } %}
             <template data-speculation-rules="true" data-speculation-rules-options="{{ options|json_encode }}"></template>
+            <style>
+                @view-transition {
+                    navigation: auto;
+                    types: bounce slide;
+                }
+            </style>
         {% endif %}
     {% endblock %}
 {% endblock %}
